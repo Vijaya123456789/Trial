@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bundle-SymbolicName: Trial_Flow; singleton:=true
+Bundle-SymbolicName: CICD_TestFlow; singleton:=true
 Bundle-ManifestVersion: 2
-Origin-Bundle-SymbolicName: Trial_Flow
+Origin-Bundle-SymbolicName: CICD_TestFlow
 SAP-ArtifactTrait: 
 Import-Package: com.sap.esb.application.services.cxf.interceptor,com.s
  ap.esb.security,com.sap.it.op.agent.api,com.sap.it.op.agent.collector
@@ -29,9 +29,9 @@ Import-Package: com.sap.esb.application.services.cxf.interceptor,com.s
  ,com.sap.esb.camel.endpoint.configurator.api,com.sap.esb.camel.jdbc.i
  dempotency.reorg,javax.sql,org.apache.camel.processor.idempotent.jdbc
  ,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
-Origin-Bundle-Name: Trial_Flow
+Origin-Bundle-Name: CICD_TestFlow
 SAP-RuntimeProfile: iflmap
-Bundle-Name: Trial_Flow
+Bundle-Name: CICD_TestFlow
 Bundle-Version: 1.0.0
 SAP-NodeType: IFLMAP
 SAP-BundleType: IntegrationFlow
