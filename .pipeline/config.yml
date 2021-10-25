@@ -1,0 +1,22 @@
+# Project configuration
+general:
+  cpiApiServiceKeyCredentialsId: "<cpi-test>" 
+  integrationFlowId: "<CICD_TestFlow>"
+# Stages configuration
+stages: 
+  uploadStage: 
+    enable: true #(default: false) 
+  deployStage: 
+    enable: true #(default: false) 
+  integrationTestStage: 
+    enable: true #(default: false)
+    # Steps configuration
+steps: 
+  integrationArtifactUpload: 
+    packageId:  "<CICDTest>"  
+    integrationFlowName: "<CICD_TestFlow>" 
+  integrationArtifactTriggerIntegrationTest: 
+    contentType:  "<application/x-www-form-urlencoded>"     # optional, has to be specified when a messageBodyPath is defined
+    messageBodyPath:  "<integrationsTest/messageBody>"      # optional
+    iFlowServiceKeyCredentialsId: <cpi-test>
+    
